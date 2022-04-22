@@ -38,7 +38,7 @@
                         <a class="nav-link" aria-current="page" th:href="@{/admin}" sec:authorize="hasRole('ADMIN')">Admin</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" th:href="@{/user/{name}(name=${#authentication.getName()})}">User</a>
+                        <a class="nav-link active" th:href="@{/user}">User</a>
                     </li>
                 </ul>
             </div>
