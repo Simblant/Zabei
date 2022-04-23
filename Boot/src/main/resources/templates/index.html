@@ -106,22 +106,23 @@
                         <form id="create">
                             <div class="form-group col-12">
                                 <label for="createName">Name</label>
-                                <input type="text" class="form-control" id="createName"
+                                <input type="text" class="form-control" id="createName" name="name"
                                        placeholder="Name">
                             </div>
                             <div class="form-group col-12">
                                 <label for="createPassword">Password</label>
-                                <input type="text" class="form-control" id="createPassword"
+                                <input type="text" class="form-control" id="createPassword" name="password"
                                        placeholder="Password">
                             </div>
                             <div class="form-group col-12">
                                 <label for="createAge">Age</label>
-                                <input type="number" class="form-control" id="createAge"
+                                <input type="number" class="form-control" id="createAge" name="age"
                                        placeholder="Age">
                             </div>
                             <div class="form-group col-12">
                                 <label for="createRoles">Role</label>
-                                <select class="form-control" name="roles" multiple required size="2" id="createRoles"></select>
+                                <select class="form-control" name="roles" multiple required size="2"
+                                        id="createRoles"></select>
                             </div>
                             <div class="col-12 text-center">
                                 <button type="submit" class="btn btn-success">Create user</button>
@@ -144,29 +145,29 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <form>
-                                        <div class="form-group col-12">
-                                            <label for="editID">ID</label>
-                                            <input type="number" class="form-control" id="editID" placeholder="ID" readonly>
-                                        </div>
-                                        <div class="form-group col-12">
-                                            <label for="editName">Name</label>
-                                            <input type="text" class="form-control" id="editName" placeholder="Name">
-                                        </div>
-                                        <div class="form-group col-12">
-                                            <label for="editPassword">Password</label>
-                                            <input type="text" class="form-control" id="editPassword"
-                                                   placeholder="Password">
-                                        </div>
-                                        <div class="form-group col-12">
-                                            <label for="editAge">Age</label>
-                                            <input type="number" class="form-control" id="editAge" placeholder="Age">
-                                        </div>
-                                        <div class="form-group col-12">
-                                            <label for="editRoles">Role</label>
-                                            <select class="form-control" name="roles" multiple size="2" id="editRoles"></select>
-                                        </div>
-                                    </form>
+                                    <div class="form-group col-12">
+                                        <label for="editID">ID</label>
+                                        <input type="text" class="form-control" id="editID" placeholder="ID" name="id"
+                                               readonly>
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label for="editName">Name</label>
+                                        <input type="text" class="form-control" id="editName" name="name" placeholder="Name">
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label for="editPassword">Password</label>
+                                        <input type="text" class="form-control" id="editPassword" name="password"
+                                               placeholder="Password">
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label for="editAge">Age</label>
+                                        <input type="number" class="form-control" id="editAge" name="age" placeholder="Age">
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label for="editRoles">Role</label>
+                                        <select class="form-control" name="roles" multiple size="2"
+                                                id="editRoles"></select>
+                                    </div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -192,32 +193,32 @@
                                 </div>
                                 <div class="modal-body">
                                     <fieldset disabled>
-                                        <form>
-                                            <div class="form-group col-12">
-                                                <label for="deleteID">ID</label>
-                                                <input type="number" class="form-control" id="deleteID" placeholder="ID" readonly>
-                                            </div>
-                                            <div class="form-group col-12">
-                                                <label for="deleteName">Name</label>
-                                                <input type="text" class="form-control" id="deleteName"
-                                                       placeholder="Name">
-                                            </div>
-                                            <div class="form-group col-12">
-                                                <label for="deletePassword">Password</label>
-                                                <input type="text" class="form-control" id="deletePassword"
-                                                       placeholder="Password">
-                                            </div>
-                                            <div class="form-group col-12">
-                                                <label for="deleteAge">Age</label>
-                                                <input type="number" class="form-control" id="deleteAge"
-                                                       placeholder="Age">
-                                            </div>
-                                            <div class="form-group col-12">
-                                                <label for="deleteRoles">Role</label>
-                                                <select class="form-control" name="roles" multiple size="2" id="deleteRoles">
-                                                </select>
-                                            </div>
-                                        </form>
+                                        <div class="form-group col-12">
+                                            <label for="deleteID">ID</label>
+                                            <input type="number" class="form-control" id="deleteID" name="id" placeholder="ID"
+                                                   readonly>
+                                        </div>
+                                        <div class="form-group col-12">
+                                            <label for="deleteName">Name</label>
+                                            <input type="text" class="form-control" id="deleteName" name="name"
+                                                   placeholder="Name">
+                                        </div>
+                                        <div class="form-group col-12">
+                                            <label for="deletePassword">Password</label>
+                                            <input type="text" class="form-control" id="deletePassword" name="password"
+                                                   placeholder="Password">
+                                        </div>
+                                        <div class="form-group col-12">
+                                            <label for="deleteAge">Age</label>
+                                            <input type="number" class="form-control" id="deleteAge" name="age"
+                                                   placeholder="Age">
+                                        </div>
+                                        <div class="form-group col-12">
+                                            <label for="deleteRoles">Role</label>
+                                            <select class="form-control" name="roles" multiple size="2"
+                                                    id="deleteRoles">
+                                            </select>
+                                        </div>
                                     </fieldset>
                                 </div>
                                 <div class="modal-footer">

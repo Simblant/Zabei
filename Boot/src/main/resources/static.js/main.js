@@ -9,8 +9,8 @@ function table() {
                     console.log(data);
                     if (data.length > 0) {
                         let temp = "";
+                        temp += "<tr>";
                         data.forEach((user) => {
-                            temp += "<tr id='" + user.id + "'>";
                             temp += "<td>" + user.id + "</td>";
                             temp += "<td>" + user.name + "</td>";
                             temp += "<td>" + user.password + "</td>";
@@ -48,7 +48,7 @@ function editModal(userId) {
 
     let urlUser = "http://localhost:8080/admin/user/" + userId;
 
-    $('.editForm #edit').modal();
+    $('.editForm #edit').modal('show');
 
     fetch(urlUser, {method: 'GET'})
         .then(res => res.json())

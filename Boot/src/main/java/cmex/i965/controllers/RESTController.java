@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -41,13 +40,12 @@ public class RESTController {
     }
 
     @PostMapping("/admin/user")
-    public User save(@RequestBody User user) {
+    public void save(@RequestBody User user) {
         userService.save(user);
-        return user;
     }
 
     @PatchMapping("/admin/user/{id}")
-    public void update(@PathVariable int id, @RequestBody User user) {
+    public void update(@RequestBody User user) {
         userService.update(user);
     }
 
